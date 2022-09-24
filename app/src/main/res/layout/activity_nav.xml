@@ -1,9 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".NavAct">
+    android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/tvInst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Instructions"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="51dp" />
+
+    <TextView
+        android:id="@+id/txtInstruction"
+        android:layout_marginTop="50dp"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:width="400dp"
+        android:height="200dp"
+        android:text="1.Do not panic, we are with you in this ❤ \n
+2.To direct help to your current location , click on send current location \n
+3.To direct help to your home , click on send home address"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="131dp" />
+
+    <EditText
+        android:id="@+id/tvAdd"
+        android:layout_width="400dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="137dp"
+        android:layout_marginBottom="81dp"
+        android:hint="Add Address" />
+
+    <EditText
+        android:id="@+id/AddLandmark"
+        android:layout_width="400dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="168dp"
+        android:text="Add Landmark  " />
+
+    <Button
+        android:id="@+id/btnCurrentLoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="600dp"
+        android:layout_marginEnd="96dp"
+        android:drawableLeft="@drawable/current_loc"
+        android:text="Use Current Location" />
+
+
+
+</RelativeLayout>
